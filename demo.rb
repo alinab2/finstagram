@@ -10,8 +10,12 @@ def check_age(age, name)
 end
 
 
-names = ["alina", "ali", "alin"]
-ages = [10, 20, 30]
+names = ["alina", "ali", "alin", "alize"]
+
+
+names.each do |name|
+    puts name + " is cool!"
+end
 
 people = [
     {
@@ -19,10 +23,42 @@ people = [
     age: 30
     }, 
     {
-    name: "bob",
+    name: "ali",
     age:45
+    },
+    {
+    name: "alin",
+     age:35
+    },
+     {
+    name: "alize",
+    age:23
     }
 ]
+for p in people 
+   if p[:age] > 31 
+        puts p[:name] + ", you get a discount"
+   else 
+        puts p[:name] + ", you get a 10% discount"
+   end
+end
 
-puts people[0][:name]
+for n in (1..100)
+    if n % 3==0
+        puts "fizz"
+    else
+        puts n
+    end
+
+    if n % 5 == 0
+        puts "buzz"
+    else
+        puts n
+    end
+    if n % 3 == 0 and n % 5 == 0
+        puts "fizzbuzz"
+    else 
+        puts n
+    end
+end
 
