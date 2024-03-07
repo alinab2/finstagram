@@ -62,3 +62,7 @@ for n in (1..100)
     end
 end
 
+<% for i in (1..10000) %>
+    <%= i %>
+<% end %>
+
